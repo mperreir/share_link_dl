@@ -56,7 +56,7 @@ if __name__ == "__main__":
         destination_path = '.'
         if len(sys.argv) == 1:
             print("Usage : share_link_dl.py share_link_url [destination_path]")
-            exit()
+            sys.exit()
         elif len(sys.argv) == 3:
             destination_path = sys.argv[2]
             if not os.path.exists(destination_path):
